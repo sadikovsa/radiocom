@@ -76,51 +76,124 @@
     </div>
 </header>
 <main class="main">
-   <section class="news__item">
+   <section class="products">
     <div class="container">
-        <div class="news__item-wrapper">
-            <div class="news__item-content">
-                <h3>Лица, постоянно проживающие в Узбекистане в течение 15 лет, смогут получить гражданство</h3>
-                <p>Тарихчи Публий Корнелий Тацит милодий биринчи асрда шу гапларни ёзиб қолдирган. Бу сўзлар ҳозир ҳам аҳамиятини йўқотмаган.</p>
-                <p>Ўзбекистонда охирги вақтда шундай тенденция кузатилмоқда: бирор муаммо кун тартибига чиқса ва уни ҳал қилиш зарурати ҳақида сиёсий доира фаол гапира бошласа, ечим йўли кўпинча бир хил бўлади: шу муаммо билан шуғулланувчи янги давлат идораси ташкил этилади. Иқтисодий тараққиёт ва камбағалликни қисқартириш вазирлиги, Коррупцияга қарши курашиш агентлиги, Маҳалла ва оилани қўллаб-қувватлаш вазирлиги сингари.</p>
-                <p>Табиий савол туғилади: янги идора ташкил этиш муаммо учун ечим бўла оладими? Ҳукуматнинг бу тахлит «семириб бориши» бошқа муаммоларни ҳам келтириб чиқариши мумкинми?</p>
-                <p>Gov.uz ҳукумат портали маълумотларига кўра, ҳозир Ўзбекистон Республикаси ҳукумати (ижро аппарати)ни қуйидагилар ташкил этади:</p>
-
-                <ul>
-                    <li>24та вазирлик;</li>
-                    <li>Вазирлар Маҳкамаси таркибида 10та давлат қўмитаси;</li>
-                    <li>11та агентлик;</li>
-                    <li>Вазирлар Маҳкамаси ҳузуридаги 5та қўмита;</li>
-                    <li>ВМ ва вазирликлар ҳузуридаги 5та марказ ва 4та инспекция;</li>
-                    <li>2та марказий муассаса;</li>
-                    <li>4та департамент.</li>
+        <h2 class="title"><span>Продукция:</span></h2>
+        <div class="products__wrapper">
+            <div class="products__left">
+                <p>Разделы каталога:</p>
+                <ul class="products__catergories">
+                    <li>
+                        <label for="category1" class="checkbox">
+                            <input type="checkbox" id="category1" name="category" value="pmr">
+                            <span></span>
+                            ПМР
+                        </label>
+                    </li>
+                    <li>
+                        <label for="category2" class="checkbox">
+                            <input type="checkbox" id="category2" name="category" value="prof">
+                            <span></span>
+                            Проф
+                        </label>
+                    </li>
                 </ul>
-                <h3>Фотогалерея новости</h3>
-                <div class="news__item-images">
-                    <a data-fslightbox="gallery" href="./images/news/news-1.jpg">
-                        <img src="./images/news/news-1.jpg" alt="news">
-                    </a>
-                    <a data-fslightbox="gallery" href="./images/news/news-2.jpg">
-                        <img src="./images/news/news-2.jpg" alt="news">
-                    </a>
-                </div>
             </div>
-            <div class="news__item-left">
-                <h2 class="title"><span>Читайте так же</span></h2>
-                <div class="news__list">
-                    <artile class="news__similar">
-                        <time datetime="05.05.2021">05.05.2021</time>
-                        <strong>Опубликован проект госпрограммы на 2021 год</strong>
-                        <p>Как выяснилось, сроки отпусков глав регионов утверждены администрацией прези...</p>
-                        <a href="#" class="btn btn--black">Подробнее</a>
-                    </artile>
-                    <artile class="news__similar">
-                        <time datetime="05.05.2021">05.05.2021</time>
-                        <strong>Опубликован проект госпрограммы на 2021 год</strong>
-                        <p>Как выяснилось, сроки отпусков глав регионов утверждены администрацией прези...</p>
-                        <a href="#" class="btn btn--black">Подробнее</a>
-                    </artile>
+            <div class="products__right">
+
+                <ul class="products__filters">
+                    <li>Фильтр:</li>
+                    <li>
+                        <label for="filter1" class="checkbox">
+                            <input type="checkbox" id="filter1" name="category" value="motorola">
+                            <span></span>
+                        </label>
+                        <label for="filter1" class="checkbox__icon">
+                            <img src="./images/motorola.png" alt="Moto">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="filter2" class="checkbox">
+                            <input type="checkbox" id="filter2" name="category" value="sony">
+                            <span></span>
+                        </label>
+                        <label for="filter2" class="checkbox__icon">
+                            <img src="./images/motorola.png" alt="Moto">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="filter3" class="checkbox">
+                            <input type="checkbox" id="filter3" name="category" value="samsung">
+                            <span></span>
+                        </label>
+                        <label for="filter3" class="checkbox__icon">
+                            <img src="./images/motorola.png" alt="Moto">
+                        </label>
+                    </li>
+                </ul>
+                <div class="products__list">
+                    <div class="products__item" data-cagetory="pmr" data-filter="motorola">
+                        <p class="products__image">
+                            <img src="./images/radio-2.png" alt="Radio">
+                        </p>
+                        <div class="products__info">
+                            <p class="products__title">Motorola M3 RX</p>
+                            <p class="products__text">Рация Motorola DP1400 Простая и доступная, портативная аналоговая/цифровая радиостанция DP1400 обеспечивает эффективную связь с сотрудниками и обладает гибкостью для роста вместе с бизнесом. Портативная радиостанция Motorola DP2400 Радиостанция DP2400 работает в частотных диапазонах УВЧ и ОВЧ, поддерживает 16 каналов.</p>
+                            <div class="products__bottom">
+                                <a href="#" class="btn btn--black">Подробнее</a>
+                                <p class="products__price">Цена: <span>500 000 сум</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item" data-cagetory="pmr" data-filter="sony">
+                        <p class="products__image">
+                            <img src="./images/radio-2.png" alt="Radio">
+                        </p>
+                        <div class="products__info">
+                            <p class="products__title">Motorola M3 RX</p>
+                            <p class="products__text">Рация Motorola DP1400 Простая и доступная, портативная аналоговая/цифровая радиостанция DP1400 обеспечивает эффективную связь с сотрудниками и обладает гибкостью для роста вместе с бизнесом. Портативная радиостанция Motorola DP2400 Радиостанция DP2400 работает в частотных диапазонах УВЧ и ОВЧ, поддерживает 16 каналов.</p>
+                            <div class="products__bottom">
+                                <a href="#" class="btn btn--black">Подробнее</a>
+                                <p class="products__price">Цена: <span>500 000 сум</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item" data-cagetory="prof" data-filter="samsung">
+                        <p class="products__image">
+                            <img src="./images/radio-2.png" alt="Radio">
+                        </p>
+                        <div class="products__info">
+                            <p class="products__title">Motorola M3 RX</p>
+                            <p class="products__text">Рация Motorola DP1400 Простая и доступная, портативная аналоговая/цифровая радиостанция DP1400 обеспечивает эффективную связь с сотрудниками и обладает гибкостью для роста вместе с бизнесом. Портативная радиостанция Motorola DP2400 Радиостанция DP2400 работает в частотных диапазонах УВЧ и ОВЧ, поддерживает 16 каналов.</p>
+                            <div class="products__bottom">
+                                <a href="#" class="btn btn--black">Подробнее</a>
+                                <p class="products__price">Цена: <span>500 000 сум</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item" data-cagetory="prof" data-filter="motorola">
+                        <p class="products__image">
+                            <img src="./images/radio-2.png" alt="Radio">
+                        </p>
+                        <div class="products__info">
+                            <p class="products__title">Motorola M3 RX</p>
+                            <p class="products__text">Рация Motorola DP1400 Простая и доступная, портативная аналоговая/цифровая радиостанция DP1400 обеспечивает эффективную связь с сотрудниками и обладает гибкостью для роста вместе с бизнесом. Портативная радиостанция Motorola DP2400 Радиостанция DP2400 работает в частотных диапазонах УВЧ и ОВЧ, поддерживает 16 каналов.</p>
+                            <div class="products__bottom">
+                                <a href="#" class="btn btn--black">Подробнее</a>
+                                <p class="products__price">Цена: <span>500 000 сум</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <ul class="pagination">
+                    <li><a href="#" class="current">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">Далее</a></li>
+                </ul>
             </div>
         </div>
     </div>
