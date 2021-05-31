@@ -76,129 +76,64 @@
     </div>
 </header>
 <main class="main">
-   <section class="products">
+   <section class="product">
     <div class="container">
-        <h2 class="title"><span>Продукция:</span></h2>
-        <div class="products__wrapper">
-            <div class="products__left">
-                <p>Разделы каталога:</p>
-                <ul class="products__catergories">
-                    <li>
-                        <label for="category1" class="checkbox">
-                            <input type="radio" id="category1" name="category" value="pmr" checked>
-                            <span></span>
-                            ПМР
-                        </label>
-                    </li>
-                    <li>
-                        <label for="category2" class="checkbox">
-                            <input type="radio" id="category2" name="category" value="prof">
-                            <span></span>
-                            Проф
-                        </label>
-                    </li>
-                </ul>
-                <select name="productsSelect" id="productsSelect" class="tabs__select mobile">
-                    <option value="all">Все курсы</option>
-                    <option value="one">Курсы специализации</option>
-                    <option value="two">Курсы для детей</option>
-                </select>
-            </div>
-            <div class="products__right">
-
-                <ul class="products__filters">
-                    <li>Фильтр:</li>
-                    <li>
-                        <label for="filter1" class="checkbox">
-                            <input type="checkbox" id="filter1" name="filter" value="motorola">
-                            <span></span>
-                        </label>
-                        <label for="filter1" class="checkbox__icon">
-                            <img src="./images/motorola.png" alt="Moto">
-                        </label>
-                    </li>
-                    <li>
-                        <label for="filter2" class="checkbox">
-                            <input type="checkbox" id="filter2" name="filter" value="sony">
-                            <span></span>
-                        </label>
-                        <label for="filter2" class="checkbox__icon">
-                            <img src="./images/motorola.png" alt="Moto">
-                        </label>
-                    </li>
-                    <li>
-                        <label for="filter3" class="checkbox">
-                            <input type="checkbox" id="filter3" name="filter" value="samsung">
-                            <span></span>
-                        </label>
-                        <label for="filter3" class="checkbox__icon">
-                            <img src="./images/motorola.png" alt="Moto">
-                        </label>
-                    </li>
-                </ul>
-                <div class="products__list">
-                    <div class="products__item" data-category="pmr" data-filter="motorola">
-                        <p class="products__image">
-                            <img src="./images/radio-2.png" alt="Radio">
-                        </p>
-                        <div class="products__info">
-                            <p class="products__title">Motorola M3 RX</p>
-                            <p class="products__text">Рация Motorola DP1400 Простая и доступная, портативная аналоговая/цифровая радиостанция DP1400 обеспечивает эффективную связь с сотрудниками и обладает гибкостью для роста вместе с бизнесом. Портативная радиостанция Motorola DP2400 Радиостанция DP2400 работает в частотных диапазонах УВЧ и ОВЧ, поддерживает 16 каналов.</p>
-                            <div class="products__bottom">
-                                <a href="#" class="btn btn--black">Подробнее</a>
-                                <p class="products__price">Цена: <span>500 000 сум</span></p>
-                            </div>
+        <a href="#" class="back">
+            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.73182 0L9 1.14211L2.49545 7L9 12.8579L7.73182 14L0 7L7.73182 0Z" />
+            </svg>
+            Вернуться
+        </a>
+        <div class="product__wrapper">
+            <div class="product__top">
+                <p class="product__img">
+                    <img src="./images/no-image.png" alt="image">
+                </p>
+                <div class="product__info">
+                    <h2 class="product__title">Motorola Talkabout T42</h2>
+                    <p>Производитель: <span>Motorola</span></p>
+                    <p>Код товара: <span>Motorola Talkabout T42</span></p>
+                    <p>Доступность: <span>На складе</span></p>
+                    <div class="product__prices">
+                        <div class="product__prices-left">
+                            <p class="product__price">Цена: 500 000 сум</p>
+                            <button class="btn btn--black">Приобрести</button>
+                            <ul class="product__paymethods">
+                                <li><img src="./images/payme.png" alt="payme"></li>
+                                <li><img src="./images/click.png" alt="click"></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="products__item" data-category="pmr" data-filter="sony">
-                        <p class="products__image">
-                            <img src="./images/radio-2.png" alt="Radio">
-                        </p>
-                        <div class="products__info">
-                            <p class="products__title">Sony M3 RX</p>
-                            <p class="products__text">Рация Motorola DP1400 Простая и доступная, портативная аналоговая/цифровая радиостанция DP1400 обеспечивает эффективную связь с сотрудниками и обладает гибкостью для роста вместе с бизнесом. Портативная радиостанция Motorola DP2400 Радиостанция DP2400 работает в частотных диапазонах УВЧ и ОВЧ, поддерживает 16 каналов.</p>
-                            <div class="products__bottom">
-                                <a href="#" class="btn btn--black">Подробнее</a>
-                                <p class="products__price">Цена: <span>500 000 сум</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item" data-category="prof" data-filter="samsung">
-                        <p class="products__image">
-                            <img src="./images/radio-2.png" alt="Radio">
-                        </p>
-                        <div class="products__info">
-                            <p class="products__title">Samsung M3 RX</p>
-                            <p class="products__text">Рация Motorola DP1400 Простая и доступная, портативная аналоговая/цифровая радиостанция DP1400 обеспечивает эффективную связь с сотрудниками и обладает гибкостью для роста вместе с бизнесом. Портативная радиостанция Motorola DP2400 Радиостанция DP2400 работает в частотных диапазонах УВЧ и ОВЧ, поддерживает 16 каналов.</p>
-                            <div class="products__bottom">
-                                <a href="#" class="btn btn--black">Подробнее</a>
-                                <p class="products__price">Цена: <span>500 000 сум</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item" data-category="prof" data-filter="motorola">
-                        <p class="products__image">
-                            <img src="./images/radio-2.png" alt="Radio">
-                        </p>
-                        <div class="products__info">
-                            <p class="products__title">Motorola M3 RX</p>
-                            <p class="products__text">Рация Motorola DP1400 Простая и доступная, портативная аналоговая/цифровая радиостанция DP1400 обеспечивает эффективную связь с сотрудниками и обладает гибкостью для роста вместе с бизнесом. Портативная радиостанция Motorola DP2400 Радиостанция DP2400 работает в частотных диапазонах УВЧ и ОВЧ, поддерживает 16 каналов.</p>
-                            <div class="products__bottom">
-                                <a href="#" class="btn btn--black">Подробнее</a>
-                                <p class="products__price">Цена: <span>500 000 сум</span></p>
-                            </div>
+                        <div class="product__prices-right">
+                            <p class="product__price">Цена: 500 000 сум</p>
+                            <button class="btn btn--black">Приобрести</button>
                         </div>
                     </div>
                 </div>
-                <ul class="pagination">
-                    <li><a href="#" class="current">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">Далее</a></li>
-                </ul>
+            </div>
+            <div class="product__bottom">
+                <div class="product__content">
+
+                </div>
+                <div class="product__gallary">
+                    <p class="product__images">
+                        <img src="./images/no-image.png" alt="image">
+                    </p>
+                    <p class="product__images">
+                        <img src="./images/no-image.png" alt="image">
+                    </p>
+                    <p class="product__images">
+                        <img src="./images/no-image.png" alt="image">
+                    </p>
+                    <p class="product__images">
+                        <img src="./images/no-image.png" alt="image">
+                    </p>
+                    <p class="product__images">
+                        <img src="./images/no-image.png" alt="image">
+                    </p>
+                    <p class="product__images">
+                        <img src="./images/no-image.png" alt="image">
+                    </p>
+                </div>
             </div>
         </div>
     </div>
