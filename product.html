@@ -99,8 +99,8 @@
                             <p class="product__price">Цена: 500 000 сум</p>
                             <button class="btn btn--black">Приобрести</button>
                             <ul class="product__paymethods">
-                                <li><img src="./images/payme.png" alt="payme"></li>
-                                <li><img src="./images/click.png" alt="click"></li>
+                                <li><a href="#"><img src="./images/payme.png" alt="payme"></a></li>
+                                <li><a href="#"><img src="./images/click.png" alt="click"></a></li>
                             </ul>
                         </div>
                         <div class="product__prices-right">
@@ -112,27 +112,58 @@
             </div>
             <div class="product__bottom">
                 <div class="product__content">
-
+                    <ul class="product__tabs tabs__navs">
+                        <li><a href="#" class="tabs__item active" data-tab="one">Описание</a></li>
+                        <li><a href="#" class="tabs__item " data-tab="two">Характеристики</a></li>
+                    </ul>
+                    <div class="tabs__contents product__contents">
+                        <div class="tabs__content active" id="one">
+                            <p>Комплектация:</p>
+                            <p>Радиостанция Motorola Talkabout T42 - 2 шт;</p>
+                            <p>Цвет синий, красный</p>
+                            <p>Клипса на пояс - 2 шт</p>
+                            <p>Инструкция по эксплуатации.</p>
+                            <p>Скидки предусмотрены в зависимости от количества:</p>
+                            <p>Цена свыше 20 комплектов - 450.000 сум.</p>
+                        </div>
+                        <div class="tabs__content" id="two">
+                            Характеристика
+                        </div>
+                    </div>
                 </div>
-                <div class="product__gallary">
-                    <p class="product__images">
-                        <img src="./images/no-image.png" alt="image">
-                    </p>
-                    <p class="product__images">
-                        <img src="./images/no-image.png" alt="image">
-                    </p>
-                    <p class="product__images">
-                        <img src="./images/no-image.png" alt="image">
-                    </p>
-                    <p class="product__images">
-                        <img src="./images/no-image.png" alt="image">
-                    </p>
-                    <p class="product__images">
-                        <img src="./images/no-image.png" alt="image">
-                    </p>
-                    <p class="product__images">
-                        <img src="./images/no-image.png" alt="image">
-                    </p>
+                <div class="product__slider swiper-container">
+                    <div class="product__gallary swiper-wrapper">
+                        <a class="product__image swiper-slide" data-fslightbox="gallery" href="./images/no-image.png">
+                            <img src="./images/no-image.png" alt="image">
+                        </a>
+                        <a class="product__image swiper-slide" data-fslightbox="gallery" href="./images/no-image.png">
+                            <img src="./images/no-image.png" alt="image">
+                        </a>
+                        <a class="product__image swiper-slide" data-fslightbox="gallery" href="./images/no-image.png">
+                            <img src="./images/no-image.png" alt="image">
+                        </a>
+                        <a class="product__image swiper-slide" data-fslightbox="gallery" href="./images/no-image.png">
+                            <img src="./images/no-image.png" alt="image">
+                        </a>
+                        <a class="product__image swiper-slide" data-fslightbox="gallery" href="./images/no-image.png">
+                            <img src="./images/no-image.png" alt="image">
+                        </a>
+                        <a class="product__image swiper-slide" data-fslightbox="gallery" href="./images/no-image.png">
+                            <img src="./images/no-image.png" alt="image">
+                        </a>
+                    </div>
+                    <div class="slider__controls mobile">
+                        <button type="button" class="slider__control slider__control-prev">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.87484 0.083313L9.1665 1.37498L2.5415 7.99998L9.1665 14.625L7.87484 15.9166L-0.000163078 7.99998L7.87484 0.083313Z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="slider__control slider__control-next">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.12516 0.083313L0.833496 1.37498L7.4585 7.99998L0.833496 14.625L2.12516 15.9166L10.0002 7.99998L2.12516 0.083313Z" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -198,7 +229,7 @@
     </button>
     <div class="modal__wrapper">
         <div class="modal__left">
-            <img src="./images/modal-img.png" alt="modal image">
+            
         </div>
         <div class="modal__right">
             <h2 class="modal__title">Курс: <span>Технические курсы</span></h2>
